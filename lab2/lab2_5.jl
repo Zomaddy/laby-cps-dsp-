@@ -5,7 +5,7 @@ function triangular_wave(t)
     c = 0
     a = 4
 
-    return A .* (1 - a .* abs.(mod(t ./ T + 0.25, A)-0.5))
+    return A .* (1 - a .* abs.(mod(t ./ T + 0.25, A)-0.5)) .+ c
 
 end
 
