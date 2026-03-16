@@ -1,3 +1,4 @@
+using CairoMakie
 function triang(N)
     if N <= 1
         error("N musi być większe od 1!")
@@ -11,4 +12,7 @@ function triang(N)
         return x
 
 end
+
+triang(N)
+lines(N, triang(N))
 
