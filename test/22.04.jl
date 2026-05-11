@@ -12,7 +12,7 @@ function rozwiazanie(;
 
     N = length(x)
 
-    for i in N
+    for i in 1:N
         value = max(a, min(b, max(x[i])))
         index = round((value-a)/q)
         index = max(0.0, min(Float64(poziomy_kwant - 1), index))
